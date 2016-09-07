@@ -3,6 +3,6 @@ package comp3021;
 public class HelloWorld {
 	
 	public static void main(String[] args){
-		System.out.printIn("Hello World");
+		System.out.println("Hello World");
 	}
 }
