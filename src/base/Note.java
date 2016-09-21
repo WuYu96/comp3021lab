@@ -1,9 +1,16 @@
-package base;
+package base_local;
 import java.util.Date;
+import java.util.List;
 
-public class Note {
+
+public class Note implements Comparable<Note> {
 	private Date date;
 	private String title;
+	
+	public int compareTo(Note o){
+		
+		return this.date.compareTo(o.date);
+	}
 	
 	public Note(String title){
 		this.title = title;
@@ -13,6 +20,7 @@ public class Note {
 		
 		return title;
 	}
+	
 
 	@Override
 	public int hashCode() {
